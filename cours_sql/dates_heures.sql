@@ -1,0 +1,21 @@
+/* FORMAT 
+%d -> 01(jour)
+%m -> 05(mois)
+%Y -> 2020(année)
+
+%H(heure)
+%i(minute)
+%S(seconde)
+*/
+/* DATE ACTUELLE 
+SELECT NOW()
+*/
+/* EXTRACTION D'INFORMATION 
+SELECT DAY('2020-02-13');
+SELECT MONTH('2020-02-13);
+SELECT YEA('2020-02-13');
+*/
+/* SOUSTRACTION : DATE1 - DATE2 
+SELECT DATEDIFF('2020-02-17', '2019-11-16');
+*/
+DATE_FORMAT('2020-12-06 14:07:23', 'Le %d/%m/%Y, à %H:%i:%S');

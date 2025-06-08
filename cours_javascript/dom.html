@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dom.css">
+</head>
+<body>
+    <!--
+    EXEMPLE DE DEBUT
+    <p id="demo"></p>
+
+    <script>
+        document.getElementById("demo").innerHTML = "Hello World!";
+    </script>-->
+    <!--
+    RECHERCHER UN ELEMENT PAR ID
+    <h2>JavaScript HTML DOM</h2>
+
+    <p id="intro">Finding HTML Elements by Id</p>
+    <p>This example demonstrates the <b>getElementsById</b> method.</p>
+
+    <p id="demo"></p>
+
+    <script>
+    const element = document.getElementById("intro");
+
+    document.getElementById("demo").innerHTML = 
+    "The text from the intro paragraph is: " + element.innerHTML;
+    </script>-->
+    <!--
+    RECHERCHER UN ELEMENT PAR NOM DE BALISE
+    <h2>JavaScript HTML DOM</h2>
+
+    <p>Finding HTML Elements by Tag Name.</p>
+    <p>This example demonstrates the <b>getElementsByTagName</b> method.</p>
+
+    <p id="demo"></p>
+
+    <script>
+    const element = document.getElementsByTagName("p");
+
+    document.getElementById("demo").innerHTML = 'The text in first paragraph (index 0) is: ' + element[0].innerHTML;
+    </script>-->
+    <!--
+    RECHERCHER UN ELEMENT PAR NOM DE CLASSE
+    <h2>JavaScript HTML DOM</h2>
+
+    <p>Finding HTML Elements by Class Name.</p>
+    <p class="intro">Hello World!</p>
+    <p class="intro">This example demonstrates the <b>getElementsByClassName</b> method.</p>
+
+    <p id="demo"></p>
+
+    <script>
+    const x = document.getElementsByClassName("intro");
+    document.getElementById("demo").innerHTML = 
+    'The first paragraph (index 0) with class="intro" is: ' + x[0].innerHTML;
+    </script>-->
+    <!--
+    RECHERCHER UN ELEMENT PAR SELECTEUR CSS
+    <h2>JavaScript HTML DOM</h2>
+
+    <p>Finding HTML Elements by Query Selector</p>
+    <p class="intro">Hello World!.</p>
+    <p class="intro">This example demonstrates the <b>querySelectorAll</b> method.</p>
+
+    <p id="demo"></p>
+
+    <script>
+    const x = document.querySelectorAll("p.intro");
+    document.getElementById("demo").innerHTML = 
+    'The first paragraph (index 0) with class="intro" is: ' + x[0].innerHTML;
+    </script>-->
+    <!--
+    RECHERCHE PAR COLLECTION D'OBJET
+    <h2>JavaScript HTML DOM</h2>
+    <p>Finding HTML Elements Using <b>document.forms</b>.</p>
+
+    <form id="frm1" action="/action_page.php">
+    First name: <input type="text" name="fname" value="Donald"><br>
+    Last name: <input type="text" name="lname" value="Duck"><br><br>
+    <input type="submit" value="Submit">
+    </form> 
+
+    <p>These are the values of each element in the form:</p>
+
+    <p id="demo"></p>
+
+    <script>
+    const x = document.forms["frm1"];
+    let text = "";
+    for (let i = 0; i < x.length ;i++) {
+    text += x.elements[i].value + "<br>";
+    }
+    document.getElementById("demo").innerHTML = text;
+    </script>-->
+
+    <!--
+    MODIFICATION DU CONTENU HTML
+    <h1 id="id01">Old Heading</h1>
+    <p id="p1">Hello World</p>
+    <script>
+        const element = document.getElementById("id01");
+        element.innerHTML = "New Heading";
+        document.getElementById("p1").innerHTML = "New text";
+    </script>
+    -->
+    <!--
+    MODIFICATION DE LA VALEUR D'UN ATTRIBUT
+    <img src="smiley.gif" id="myImage">
+    <script>
+        document.getElementById("myImage").src = "landscape.jpg";
+    </script>
+    -->
+    <!--
+    CONTENU HTML DYNAMIQUE
+    <script>
+        document.getElementById("demo").innerHTML = "Date :" + Date();
+    </script>
+    -->
+    <!--
+    document.write()
+    <p>Bla bla bla</p>
+    <script>
+        document.write(Date());
+    </script>
+    <p>Bla bla bla</p>
+    -->
+    <!--
+    VALIDATION DU FORMULAIRE JAVASCRIPT
+    <form name="myForm" action="/action.page.php" onsubmit="return validateForm()" method="post">
+        Name: <input type="text" name="fname">
+        <input type="submit" value="submit">
+    </form>
+    <script>
+        function validateForm()
+        {
+            let x = document.forms["myform"]["fname"].value;
+            if(x == ""){
+                alert("Name must be filled out");
+                return false;
+            }
+        }
+    </script>
+    -->
+    <!--
+    MODIFICATION DU CSS
+    <p id="p2">Hello World!</p>
+    <script>
+        document.getElementById("p2").style.color = "blue";
+    </script>
+    -->
+    <!--
+    CREER UNE ANIMATION AVEC JAVASCRIPT
+    <h1>My first JavaScript Animation</h1>
+    <div id="animation">My animation will go here</div>
+    <div id="container">
+        <div id="animate">My animation will go here</div>
+    </div>
+    <script src="dom.js"></script>
+    -->
+    <!--
+    EVENEMENTS
+    <h2 onclick="this.innerHTML = 'Ooops!'">Click on this text!</h2>
+    -->
+    <!--
+    ATTRIBUTS D'EVENEMENTS HTML
+    <button onclick="displayDate()">Try it</button>
+    -->
+    <!--ATT D'EV A L'AIDE DU DOM HTML-->
+    
+</body>
+</html>
