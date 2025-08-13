@@ -19,7 +19,7 @@ SELECT * FROM fv_games WHERE id_game > 5;
 SELECT * FROM fv_games WHERE game_price > 5 AND game_price < 30;
 */
 /* UNE LISTE DES VALEURS (par exemple : 2, 4, 6) 
-SELECT * FROM fv_games WHERE game_stock IN(2, 4, 6);
+SELECT * FROM fv_games WHERE game_stock IN(2, 4, 6);a
 */
 /* TRAVAILLER SUR UN INTERVALLE DES VALEURS 
 SELECT * FROM fv_games WHERE game_price BETWEEN 0 AND 20;

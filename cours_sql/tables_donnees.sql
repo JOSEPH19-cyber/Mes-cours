@@ -11,7 +11,7 @@ SHOW DATABASES;
 CREATE DATABASE IF NOT EXISTS `test`;
 USE `test`;
 /* Requêtes liées aux tables */
-SHOW TABLES;
+SHOW TABLES; 
 
 CREATE TABLE IF NOT EXISTS`t_users`
 (
@@ -29,7 +29,7 @@ DROP `user_point`;--supprimer une colonne
 MODIFY `id_user` SMALLINT;--modifier le type de la colonne
 CHANGE `user_birthday` `user_birth` DATE;--changer le nom de la colonne
 
-SHOW TABLE STASTUS; --afficher les informations de la table
+SHOW TABLE STASTUS; --afficher les informations de la table de manière plus détaillée
 
 /* supprimer une table */
 DROP TABLE `t_users`;

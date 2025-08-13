@@ -1,0 +1,94 @@
+TRAVAILLER SUR MON PROJET
+
+
+Le git config:
+    git config --global user.name "monnom"
+    git config --global user.email "mail@mail.com"
+
+Les commandes linux valable pour windows
+    mkdir <name> (créer répertoire <name> )
+    cd <chemin>  (accéder à <chemin> )
+    ls <chemin>  (lister contenu répertoire <chemin> )  
+
+Initialiser un dépot git:
+    git init
+
+Ajouter un fichier dans un dépot:
+    git add notes.txt
+
+Faire un commit:
+    git commit -m "Ajout de notes.txt"
+
+Voir l'historique du dépot
+    git log
+
+Faire add et un commit directement
+    git commit -a -m "mon message"
+
+Ajouter plusieurs fichiers
+    git add --all *
+
+Renommer un fichier
+    git mv notes.txt infos.txt
+
+Supprimer un fichier
+    git rm <file>
+
+Afficher l'historique de ce qui n'a pas été sauvegarder
+    git status
+
+Vérifier une différence entre plusieurs commits
+    git diff <commit1> <commit2>
+
+
+
+TRAVAILLER SUR UN DEPOT DISTANT
+
+
+Cloner un dépot:
+    git clone git://<dépot>
+              https://<liens_vers_dépot>
+
+Synchroniser un dépot: Voir les ajouts d'autres dev
+
+                        git pull
+
+Pousser vers la branche d'origine: 
+    git push origin master
+
+Revenir à l'état d'un commit:
+    1.Annuler tous les changements spécifiés depuis le dernier commit:
+        git reset -hard HEAD
+    
+    2.Supprimer juste ce qui a été fait au dernier commit:
+        git reset -hard HEAD^
+
+Restaurer un commit:
+    git revert <id_commit>
+
+
+
+UTILISATION AVANCE
+
+
+
+Notion de branche:
+    
+    branche principale:
+        branche master
+    
+    poeinter qui mène vers la branche master:
+        HEAD 
+
+Créer une branche:
+    1.git branch
+    2.git branch <name>
+    3.git checkout <name>
+
+Supprimer une branche:
+    git branch -d <name>
+
+Permettre de recupérer les changements faits par un autre dev:
+    git remote add <name> https://<dépot>
+    git fecth <name>
+    git pull <name>

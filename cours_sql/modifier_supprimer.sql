@@ -14,4 +14,4 @@ DELETE FROM fv_games;
 */
 /* VIDER COMPLETEMENT UNE TABLE 
 TRUNCATE TABLE fv_clients;
-plus optimiser pour vider completement par rapport au deletefon*/
+plus optimiser pour vider completement par rapport au delete from*/

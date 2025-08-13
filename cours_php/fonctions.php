@@ -94,8 +94,7 @@ $coucou = "ma_fonction";
 $coucou();
 */
 /*  FONCTION ANONYME */
-$coucou = function()
-{
+$coucou = function () {
     echo "Bonjour";
 };
 $coucou();

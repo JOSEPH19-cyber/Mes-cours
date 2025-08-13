@@ -17,4 +17,4 @@ To 'jachampagne'@'localhost';
 /* POUR RETIRER CERTAINS DROITS */
 REVOKE ALL
 ON cours_sql.*
-FROM 'jachampagne'@'localhost';ex
+FROM 'jachampagne'@'localhost';

@@ -43,7 +43,7 @@ else
     echo "ERREUR";
 */
 /* 
-FILE_GET_CONTENTS 
+FILE_GET_CONTENTS : Lire le fichier sous forme de chaîne de caractère
 $infos = file_get_contents("infos.txt");
 if($infos)
     var_dump($infos);

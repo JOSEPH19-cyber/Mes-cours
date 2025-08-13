@@ -10,12 +10,12 @@ FROM fv_carbrands;
 SELECT upper(carbrand_name) FROM fv_carbrands;
 */
 /* CONVERTIR EN MINISCULE 
-SELECT upper(carbrand_name) FROM fv_carbrands;
+SELECT lower(carbrand_name) FROM fv_carbrands;
 */
 /* INVERSION D'UNE CHAINE
 SELECT reverse(carbrand_name) FROM fv_carbrands;
  */
-/* SUPPRESSION D'ESPACE BLANCS
+/* SUPPRESSION D'ESPACES BLANCS
 SELECT trim(carbrand_name) FROM fv_carbrands;
  */
 /* REMPLACER UNE INFORMATION PAR UNE AUTRE 
