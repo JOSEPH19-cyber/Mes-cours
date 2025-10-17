@@ -1,0 +1,5 @@
+{
+    "terminal.explorerKind": "integrated",
+    "terminal.integrated.accessibleViewFocusOnCommandExecution": true,
+    "terminal.integrated.scrollback": 5000
+}
